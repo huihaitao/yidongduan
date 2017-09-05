@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>分期乐</title> 
+		<link rel="stylesheet" href="dist/css/swiper.min.css">
+		<link rel="stylesheet" href="css/tuijian.css" />
+		
+	</head>
+	<body>
+		<header>
+			<div class="header_t">
+				<input type="text" placeholder="搜索您感兴趣的商品"/>
+				<i class="iconfont icon-fangdajing"></i>
+				<img src="img/xq.png"/>
+			</div>
+			<div class="header_b">
+					<a href="#" class="aa" style="color: #70a0c6;border-bottom: 2px solid #70a0c6;">推荐</a>
+					<a href="#">手机</a></li>
+					<a href="#">电脑</a>
+					<a href="#">数码</a>
+					<a href="#">充值</a>
+					<a href="#">鞋服</a>
+			</div>
+		</header> 
+		<div id="box">
+			<img src="img/tj1.jpg" id="photo"/>
+			<ul id="boxa">
+				<li onclick="img(01)"></li>
+				<li onclick="img(02)"></li>
+				<li onclick="img(03)"></li>
+				<li onclick="img(04)"></li>
+				<li onclick="img(05)"></li>
+			</ul>
+		</div>
+    
+    <!--横向滑动图-->
+    <div class="hx">
+	   <div class="swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide"><img src="img/nav1.png" style="width: 0.7rem;height: 0.7rem" alt=""></div>
+	            <div class="swiper-slide"><img src="img/nav2.png" style="width: 0.7rem;height: 0.7rem" alt=""></div>
+	            <div class="swiper-slide"><img src="img/nav3.png" style="width: 0.7rem;height: 0.7rem" alt=""></div>
+	            <div class="swiper-slide"><img src="img/nav4.png" style="width: 0.7rem;height: 0.7rem" alt=""></div>
+	            <div class="swiper-slide"><img src="img/nav2.png" style="width: 0.7rem;height: 0.7rem" alt=""></div>
+	            <div class="swiper-slide"><img src="img/nav1.png" style="width: 0.7rem;height: 0.7rem" alt=""></div>
+	        </div>
+	    </div>
+	</div>
+	<div class="qg">
+		<div class="qga">
+			<h3>乐疯抢</h3>
+		</div>
+		<div class="swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slidea">
+	            	<img src="img/qg1.png" style="width: 1rem;height: 1rem;margin-left: 0.35rem;" alt="">
+	            	<p class="qg1">￥59.9</p><span>￥114.75</span>
+	            	<p class="qg2">月供￥2.86起</p>
+	            	
+	            </div>
+	            <div class="swiper-slidea">
+	            	<img src="img/qg1.png" style="width: 1rem;height: 1rem;margin-left: 0.35rem;" alt="">
+	            	<p class="qg1">￥59.9</p><span>￥114.75</span>
+	            	<p class="qg2">月供￥2.86起</p>
+	            	
+	            </div>
+	            <div class="swiper-slidea">
+	            	<img src="img/qg1.png" style="width: 1rem;height: 1rem;margin-left: 0.35rem;" alt="">
+	            	<p class="qg1">￥59.9</p><span>￥114.75</span>
+	            	<p class="qg2">月供￥2.86起</p>
+	            	
+	            </div>
+	            <div class="swiper-slidea">
+	            	<img src="img/qg1.png" style="width: 1rem;height: 1rem;margin-left: 0.35rem;" alt="">
+	            	<p class="qg1">￥59.9</p><span>￥114.75</span>
+	            	<p class="qg2">月供￥2.86起</p>
+	            	
+	            </div>
+	            <div class="swiper-slidea">
+	            	<img src="img/qg1.png" style="width: 1rem;height: 1rem;margin-left: 0.35rem;" alt="">
+	            	<p class="qg1">￥59.9</p><span>￥114.75</span>
+	            	<p class="qg2">月供￥2.86起</p>
+	            	
+	            </div>
+	            <div class="swiper-slidea">
+	            	<img src="img/qg1.png" style="width: 1rem;height: 1rem;margin-left: 0.35rem;" alt="">
+	            	<p class="qg1">￥59.9</p><span>￥114.75</span>
+	            	<p class="qg2">月供￥2.86起</p>
+	            	
+	            </div>
+	            <div class="swiper-slidea">
+	            	<img src="img/qg1.png" style="width: 1rem;height: 1rem;margin-left: 0.35rem;" alt="">
+	            	<p class="qg1">￥59.9</p><span>￥114.75</span>
+	            	<p class="qg2">月供￥2.86起</p>
+	            	
+	            </div>
+	            <div class="swiper-slidea">
+	            	<img src="img/qg1.png" style="width: 1rem;height: 1rem;margin-left: 0.35rem;" alt="">
+	            	<p class="qg1">￥59.9</p><span>￥114.75</span>
+	            	<p class="qg2">月供￥2.86起</p>
+	            	
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	
+	
+	
+	
+<script src="dist/js/swiper.min.js"></script>
+<script type="text/javascript">
+	var ord=1;//当前图片位置
+	var myTime=null;
+	var imgs=["tj2.jpg","tj3.jpg","tj4.jpg","tj1.jpg","tj3.jpg"];
+//启动定时器
+function starTime(){
+	myTime=setInterval(changeimg,2000);
+}
+function changeimg(){
+	ord++;
+	if(ord>5){
+		ord=1;
+	}
+	 changeimgAng(ord);
+}
+//停止定时器
+function stopTime(){
+	clearInterval(myTime);
+}
+
+//让圆点对应各自图片
+function img(orda){
+	ord=orda;
+	
+	changeimgAng(ord);
+}
+function changeimgAng(ord){
+	document.getElementById("photo").src="img/"+imgs[ord-1];
+	var lis=document.getElementById("boxa").children;
+	for(var i=0;i<lis.length;i++){
+		lis[i].style.backgroundColor="#ccc";
+	}
+	lis[ord-1].style.backgroundColor="#007AFF";					
+}
+window.onload=function(){
+	var lis=document.getElementById("boxa").children;
+	lis[ord-1].style.backgroundColor="#007AFF";
+	starTime();
+	
+	document.getElementById("box").onmouseover=function(){//鼠标放上让停止
+		stopTime();
+	}
+	document.getElementById("box").onmouseout=function(){//鼠标离开让轮播
+		starTime();
+	}
+	document.getElementById("photo").onclick=function(){
+		location.href=url(ord-1);
+	}
+	
+}
+   //横向滑动图	
+    var swiper = new Swiper('.swiper-containera', {
+        loop:true,
+        // autoplay:1000,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        pagination: '.swiper-pagination',
+        slidesPerView: 4.5,
+        paginationClickable: true,
+        spaceBetween: 12,
+        freeMode: true
+    });
+    var swiper = new Swiper('.swiper-container', {
+        loop:true,
+         //autoplay:1000,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        pagination: '.swiper-pagination',
+        slidesPerView: 2.5,
+        paginationClickable: true,
+        spaceBetween: 20,
+        freeMode: true
+    });
+    </script>
+	</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>登录</title>
+		<link rel="stylesheet" href="css/login.css" />
+	</head>
+	<body>
+		<header>
+			<a href="zhuce.html">注册</a>
+			<a href="index.html">X</a>
+		</header>
+		<p class="hy">欢迎回到分期乐</p>
+		<div class="sr">
+			<div class="sr_a">
+				<input type="text" class="txt" placeholder="        请 输 入 手 机 号" onblur="showa()" id="txt1"/>
+				<span id="txt2">x</span>
+			</div>
+			<div class="sr_b">
+			<input type="password" id="pass1" placeholder="        请输入密码(大于8位的数字、字母、下划线)" onblur="showb()"/>
+			<p class="mm" id="pass2">x</p>
+			</div>
+		</div>
+		<a href="#" class="login">登录</a>
+		<div class="foot">
+			<a href="#">更多登录方式</a>
+			<a href="#">忘记密码</a>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="js/w$.js"></script>
+<script type="text/javascript">
+function showa(){
+	var str=w$("txt1").value;
+	var reg=/^1[0-9]{10}$/ig;
+	if(reg.test(str)){
+		w$("txt1").style.cssText="background:green;opacity: .5;"
+		w$("txt2").style.cssText="opacity:0;"
+	}else{
+		w$("txt2").style.cssText="opacity:1;"
+	}
+}
+function showb(){
+	var str=w$("pass1").value;
+	var reg=/^\w{8,}$/g;
+	if(reg.test(str)){
+		w$("pass1").style.cssText="background:green;opacity: .5;"
+		w$("pass2").style.cssText="opacity:0;"
+	}else{
+		w$("pass2").style.cssText="opacity:1;"
+	}
+}
+</script>

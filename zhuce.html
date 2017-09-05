@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/zhuce.css" />
+	</head>
+	<body>
+		<header>
+			<a href="login.html">已有账号</a>
+			<a href="#">X</a>
+		</header>
+		<p class="hy">注册分期乐</p>
+		<div class="sr">
+			<div class="sr_a">
+				<input type="text" class="txt" placeholder="        请 输 入 手 机 号" onblur="showa()" id="txt1"/>
+				<span id="txt2">x</span>
+			</div>
+			
+		</div>
+		<a href="#" class="next">下一步</a>
+		<div class="foot">
+			<a href="#">更多登录方式</a>
+			<a href="#">填写推荐码</a>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="js/w$.js"></script>
+<script type="text/javascript">
+function showa(){
+	var str=w$("txt1").value;
+	var reg=/^1[0-9]{10}$/ig;
+	if(reg.test(str)){
+		w$("txt1").style.cssText="background:green;opacity: .5;"
+		w$("txt2").style.cssText="opacity:0;"
+	}else{
+		w$("txt2").style.cssText="opacity:1;"
+	}
+}
+</script>
